@@ -21,6 +21,9 @@ header.primary{
   max-width:960px;
   margin:20px auto;
 }
+.img-right{
+  float:right;
+}
 
 /* --------------Responsive Images ----------------*/
 img{
@@ -113,7 +116,6 @@ header.primary nav a:hover{
   width:100%;
   margin:20px auto;
 }
-  
  
 }
 #intro h2{
@@ -126,6 +128,10 @@ header.primary nav a:hover{
   flex-direction:row;
   justify-content:center;
   gap:20px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 40px 0;
+  margin: 30px auto 20px auto;
 }
 #content .post{
   box-shadow: 1px 0px 22px 5px rgba(0,0,0,0.23);
@@ -153,6 +159,21 @@ header.primary nav a:hover{
   text-decoration:none;
 }
 
+#practice h2{
+  color:pink;
+  border-bottom: 1px dotted #ccc;
+}
+
+#practice a{
+  color:pink;
+}
+
+#practice a:hover{
+  text-decoration:none;
+}
+#practice p{
+  line-height:1.5;
+}
 aside[role="complementary"]{
   background-color:rgb(255, 207, 215);
   color:#ffffff;
