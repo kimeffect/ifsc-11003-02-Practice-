@@ -7,7 +7,7 @@ html {
 *:after {
   box-sizing: inherit;
 }
-/*----------------Global Styles ------------------*/
+
 h1, h2, h3 {
   letter-spacing: 0.5px;
 }
@@ -32,7 +32,7 @@ body {
   float:right;
 }
 
-/* --------------Responsive Images ----------------*/
+
 img{
   max-width: 100%;
 }
@@ -57,7 +57,7 @@ header.primary {
 }
 
 
-header.primary.h1{
+header.primary h1{
 
   font-weight:bold;
   font-size: 5.4rem;
@@ -75,6 +75,18 @@ header.primary h2{
   margin:0;
 
 }
+
+header.primary.no-hero {
+  background-image: none;
+  height: auto;
+  padding: 20px 40px;
+  text-align: right; 
+}
+header.primary.no-hero h1,
+header.primary.no-hero h2 {
+  display: none;  
+}
+
 .nav-frame {
   display: flex;
   align-items: center;
@@ -115,7 +127,7 @@ header.primary nav a:hover{
 }
 
 #intro h2{
-  color:rgb(19, 19, 19);
+  color:rgb(7, 0, 0);
   border-bottom:1px solid #818181;
 }
 
@@ -164,7 +176,7 @@ header.primary nav a:hover{
 
 
 #practice h2{
-  color:rgb(4, 4, 65);
+  color:rgb(0, 0, 0);
   border-bottom: 1px dotted #ccc;
 }
 
@@ -221,6 +233,72 @@ header.primary nav a:hover{
 
 
 
+
+.rover-page {
+  max-width: 1050px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+
+.page-title {
+  text-align: center;
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  color: #1a1a1a; /* readable dark */
+}
+
+
+.page-intro {
+  text-align: center;
+  max-width: 750px;
+  margin: 0 auto 40px auto;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #444; /* dark gray */
+}
+
+
+.rover-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(0,0,0,0.08);
+
+  padding: 35px;
+  border-radius: 18px;
+
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+}
+
+
+.rover-image img {
+  width: 320px;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.25);
+  object-fit: cover;
+}
+
+
+.rover-text {
+  flex: 1;
+  min-width: 260px;
+}
+
+
+.rover-text h2 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+
+
 aside[role="complementary"]{
   background-color:rgba(2, 2, 41);
   color:#ffffff;
@@ -258,4 +336,3 @@ aside .widget footer{
   font-size: .8rem;
   color: #ffffff;
 }
-
